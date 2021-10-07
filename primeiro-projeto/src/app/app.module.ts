@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { CursosModule } from './cursos/cursos.module';
 import { MeuPrimeiroCliComponent } from './meu-primeiro-cli/meu-primeiro-cli.component';
 import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
+import { DataBindingComponent } from './data-binding/data-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MeuPrimeiroComponent,
     MeuPrimeiroCliComponent,
+    DataBindingComponent,
     
   ],
   imports: [
