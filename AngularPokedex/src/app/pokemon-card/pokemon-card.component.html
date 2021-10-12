@@ -1,14 +1,18 @@
 <div class="pokemon-card">
     <div class="pokemon-card__img">
-        <img src="https://pm1.narvii.com/6400/9605b20ead97651b0d9bdb48eab5c49d3c504d3f_hq.jpg" alt="">
+        <img src={{pokemon.image}} alt="">
         <div class="pokemon-card__number">
-            n001
+            N° {{pokemon.number}}
         </div>
         <div class="pokemon-card__name">
-            Bulbasaur
+            {{pokemon.name}}
         </div>
-        <div class="pokemon-card__types--grass">Grass</div>
-        <div class="pokemon-card__types--poison">Poison</div>
+        <div class="pokemon-card__types">
+            <div class="pokemon-card__type" 
+            [class] ="'pokemon-card__type--' + type.toLowerCase()" *ngFor="let type of pokemon.types">{{type}}</div>
+            
+        </div>
+        
 
     </div>
 </div>
